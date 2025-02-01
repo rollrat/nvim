@@ -4,7 +4,7 @@
 vim.keymap.set("i", "jj", "<ESC>", { silent = true })
 
 -- terminal mode
-vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], {})
+-- vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], {})
 -- vim.keymap.set("t", "jj", [[<C-\><C-n>]], {})
 vim.keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], {})
 vim.keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], {})

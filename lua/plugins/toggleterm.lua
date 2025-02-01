@@ -6,6 +6,7 @@ return {
       -- 원하는 옵션 설정
       size = 20,
       open_mapping = [[<c-\>]],
+      insert_mappings = [[<c-w>]],
       -- ...
     },
   },

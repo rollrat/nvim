@@ -6,8 +6,10 @@ vim.g.snacks_animate = false
 
 -- git bash on windows
 if vim.fn.has("win32") then
-  vim.o.shell = "C:\\Program Files\\Git\\bin\\bash.exe"
-  vim.o.shellcmdflag = "-c zsh"
+  vim.o.shell = '"C:\\Program Files\\Git\\bin\\bash.exe"'
+  vim.o.shellcmdflag = "-c"
+  vim.o.shellquote = ""
+  vim.o.shellxquote = ""
 end
 
 vim.g.neovide_position_animation_length = 0

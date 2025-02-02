@@ -4,6 +4,8 @@
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
 vim.g.snacks_animate = false
 
-if vim.fn.executable("pwsh") then
-  vim.o.shellcmdflag = "/C bash -c zsh"
+-- git bash on windows
+if vim.fn.has("win32") then
+  vim.o.shell = "C:\\Program Files\\Git\\bin\\bash.exe"
+  vim.o.shellcmdflag = "-c zsh"
 end
